@@ -15,6 +15,7 @@
 .header .logo
 
 {
+  
   float: left;
   font-size: 25px;
   line-height: 70px;
@@ -55,23 +56,37 @@
 } 
 
 
-@media only screen and (max-width: 700px) 
-  {
+@media only screen and (max-width: 700px) {
     
       .header .btn
-  {
+        {
         display: block;
-      }
+        }
+  
+  
   
   .header ul 
-  {
+      {
+        
+    
     width: 100%;
     background-color:aqua;
    
-  }
+      }
+  
   .header ul li 
   {
+    float: none;
     display: block;
-    text-align: center;
+    text-align: left;
+    
   }
-    }
+ 
+}
+
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $("ul").toggle();
+    });
+});
