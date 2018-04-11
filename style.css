@@ -74,15 +74,16 @@ padding: 26.6px;}
   .header ul 
       {
         display: none;
-        max-height: 0
-        float: none;
+        float: left;
     width: 100%;
     background-color:aqua;
+
       }
   
   .header ul li 
   {
     float: none;
+
     display: block;
     text-align: left;
   }
@@ -93,5 +94,3 @@ padding: 26.6px;}
   }
  
 }
-
-
